@@ -1,4 +1,5 @@
 <md-toolbar *ngIf="visible; else showtoolbarbutton" color="primary">
+  <span *ngIf="title" class="apptitle">{{title}}</span>
   <ng-content select="app-toolbar-left"></ng-content>
   <ng-content></ng-content>
   <span class="fill-remaining-space"></span>
