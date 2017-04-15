@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Importing in scss files results in including the file you import
+// Importing in regular .css files will generate a HTTP request on app load to fetch the imported css file.
+// Conclusion: importing in scss files is more efficient, since we avoid many HTTP requests.
