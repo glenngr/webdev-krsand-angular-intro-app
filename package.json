@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm-run-all -p serve test",
+    "serve": "ng serve",
     "build": "ng build",
     "serve:hmr": "ng serve --hmr -e=dev-hmr",
     "test": "ng test",
