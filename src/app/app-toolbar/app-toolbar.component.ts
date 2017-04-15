@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-toolbar.component.css']
 })
 export class AppToolbarComponent implements OnInit {
+  visible = true;
 
   constructor() { }
 

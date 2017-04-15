@@ -1,6 +1,10 @@
-<md-toolbar color="primary">
+<md-toolbar *ngIf="visible; else showtoolbarbutton" color="primary">
   <ng-content select="app-toolbar-left"></ng-content>
   <ng-content></ng-content>
   <span class="fill-remaining-space"></span>
   <ng-content select="app-toolbar-right"></ng-content>
+  <button id="hide-toolbar" md-icon-button (click)="visible = false;"><md-icon>close</md-icon></button>
 </md-toolbar>
+<ng-template #showtoolbarbutton>
+  <button id="show-toolbar" md-mini-fab (click)="visible = true;"><md-icon>expand_more</md-icon></button>
+</ng-template>

@@ -2,3 +2,12 @@
 .fill-remaining-space {
   flex: 1 1 auto;
 }
+
+#show-toolbar {
+  position: fixed;
+  margin-top: 12px;
+  margin-right: 20px;
+
+  right: 0;
+  z-index: 99;
+}
