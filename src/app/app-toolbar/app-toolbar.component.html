@@ -1,11 +1,22 @@
 <md-toolbar *ngIf="visible; else showtoolbarbutton" color="primary">
+  <!-- The title is shown in the left side of the toolbar -->
   <span *ngIf="title" class="apptitle">{{title}}</span>
+
+  <!-- Left side content appears next to the title -->
   <ng-content select="app-toolbar-left"></ng-content>
+
+  <!-- Content that is neither app-toolbar-right nor left appears in the middle -->
   <ng-content></ng-content>
+
+  <!-- Right side content appears before the close button -->
   <span class="fill-remaining-space"></span>
   <ng-content select="app-toolbar-right"></ng-content>
+
+  <!-- The close button is always furthest to the right -->
   <button id="hide-toolbar" md-icon-button (click)="visible = false;"><md-icon>close</md-icon></button>
 </md-toolbar>
+
+<!-- The "show toolbar" mini-fab button is shown if the "visible" property is false-->
 <ng-template #showtoolbarbutton>
   <button id="show-toolbar" md-mini-fab (click)="visible = true;"><md-icon>expand_more</md-icon></button>
 </ng-template>
