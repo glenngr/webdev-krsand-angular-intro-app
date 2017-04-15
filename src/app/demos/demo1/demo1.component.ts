@@ -8,6 +8,7 @@ import { Movie } from './movie.model';
   styleUrls: ['./demo1.component.css']
 })
 export class Demo1Component implements OnInit {
+  movieToAdd: string;
   movieWatchlist: Movie[] = [
     new Movie('Terminator 2', true),
     new Movie('District 9', true),
@@ -19,4 +20,7 @@ export class Demo1Component implements OnInit {
   ngOnInit() {
   }
 
+  addMovie() {
+    this.movieWatchlist.push(new Movie(this.movieToAdd, false));
+  }
 }
