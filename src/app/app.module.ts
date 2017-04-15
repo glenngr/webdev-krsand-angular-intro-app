@@ -8,12 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { DemoModule } from './demos/';
-import { AppToolbarComponent } from './app-toolbar/app-toolbar.component';
+import { AppToolbarModule } from './app-toolbar/app-toolbar.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +20,8 @@ import { AppToolbarComponent } from './app-toolbar/app-toolbar.component';
     HttpModule,
     MaterialModule,
     BrowserAnimationsModule,
-    DemoModule
+    DemoModule,
+    AppToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
