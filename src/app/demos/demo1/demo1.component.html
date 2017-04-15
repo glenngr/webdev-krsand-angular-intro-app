@@ -5,9 +5,5 @@
       <li *ngFor="let movie of movieWatchlist"><input type="checkbox" [checked]="movie.seen">{{movie.title}}</li>
     </ul>
   </ng-container>
-  <h4>Add movie to watchlist</h4>
-  <input [(ngModel)]="movieToAdd" #ctrl="ngModel" required>
-  <p>Value: {{ movieToAdd }}</p>
-  <p>Valid: {{ ctrl.valid }}</p>
-  <button (click)="addMovie()">Add movie</button>
+  <app-add-movie (movieAdded)="addMovie($event)"></app-add-movie>
 </div>
