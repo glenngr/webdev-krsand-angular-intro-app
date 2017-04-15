@@ -1,5 +1,8 @@
 <div class="demo1-content">
-  <p>
-    demo1 works!
-  </p>
+  <ng-container *ngIf="movieWatchlist.length">
+    <h4>Movies to watch</h4>
+    <ul>
+      <li *ngFor="let movie of movieWatchlist">{{movie}}</li>
+    </ul>
+  </ng-container>
 </div>

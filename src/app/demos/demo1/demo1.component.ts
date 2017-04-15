@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./demo1.component.css']
 })
 export class Demo1Component implements OnInit {
+  movieWatchlist: string[] = [
+    'Terminator 2',
+    'District 9',
+    'Get out'
+  ];
 
   constructor() { }
 
