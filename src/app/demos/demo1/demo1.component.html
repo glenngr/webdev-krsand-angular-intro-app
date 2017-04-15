@@ -2,7 +2,7 @@
   <ng-container *ngIf="movieWatchlist.length">
     <h4>Movies to watch</h4>
     <ul>
-      <li *ngFor="let movie of movieWatchlist">{{movie}}</li>
+      <li *ngFor="let movie of movieWatchlist"><input type="checkbox" [checked]="movie.seen">{{movie.title}}</li>
     </ul>
   </ng-container>
 </div>
