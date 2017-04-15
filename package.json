@@ -7,7 +7,8 @@
     "start": "npm-run-all -p serve test",
     "serve": "ng serve",
     "build": "ng build",
-    "serve:hmr": "ng serve --hmr -e=dev-hmr",
+    "serve:hmr": "ng serve --hmr -e=dev-hmr --port 4300",
+    "demo:hmr": "npm-run-all -p serve serve:hmr",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
