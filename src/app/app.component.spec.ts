@@ -3,11 +3,12 @@ import { TestBed, async } from '@angular/core/testing';
 import { UnitTestModule } from './core';
 import { DemoModule } from './demos';
 import { AppComponent } from './app.component';
+import { AppToolbarModule } from './app-toolbar/app-toolbar.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [UnitTestModule, DemoModule],
+      imports: [UnitTestModule, DemoModule, AppToolbarModule],
       declarations: [
         AppComponent
       ],
@@ -26,10 +27,11 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('app works!');
   }));
 
-  it('should render title in a h1 tag', async(() => {
+  it('should render title in a app-toolbar tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('app works!');
+    expect(compiled.querySelector('app-toolbar').textContent).toContain(app.title);
   }));
 });
