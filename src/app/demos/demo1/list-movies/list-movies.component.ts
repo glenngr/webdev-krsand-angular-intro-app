@@ -13,4 +13,8 @@ export class ListMoviesComponent implements OnInit {
   ngOnInit() {
   }
 
+  trackByMovietitle(item: Movie) {
+    return item.title;
+  }
+
 }

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from '../../core/rxjs';
 
 import { Movie } from './movie.model';
-import { MovieService } from './movie.service';
+import { MovieService } from './movie-service/movie.service';
 
 @Component({
   selector: 'app-demo1',

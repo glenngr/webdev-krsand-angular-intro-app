@@ -1,6 +1,6 @@
 <ng-container *ngIf="movieWatchlist as movies">
   <h4>Movies to watch</h4>
   <ul>
-    <li *ngFor="let movie of movies" appHighlight><input type="checkbox" [checked]="movie.seen">{{movie.title | titlecase}}</li>
+    <li *ngFor="let movie of movies, trackBy:trackByMovietitle" appHighlight><input type="checkbox" [checked]="movie.seen">{{movie.title | titlecase}}</li>
   </ul>
 </ng-container>

@@ -6,6 +6,9 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryMovieService } from './core';
+
 import { AppComponent } from './app.component';
 import { DemoModule } from './demos/';
 import { AppToolbarModule } from './app-toolbar/app-toolbar.module';
@@ -18,6 +21,7 @@ import { AppToolbarModule } from './app-toolbar/app-toolbar.module';
     BrowserModule,
     FormsModule,
     HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryMovieService),
     MaterialModule,
     BrowserAnimationsModule,
     DemoModule,
