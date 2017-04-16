@@ -1,5 +1,5 @@
 <h4>Add movie to watchlist</h4>
-<input [(ngModel)]="movieToAdd" #ctrl="ngModel" required>
+<input [(ngModel)]="movieToAdd" #ctrl="ngModel" (keyup.enter)="addMovie()" required>
 <p>Value: {{ movieToAdd }}</p>
 <p>Valid: {{ ctrl.valid }}</p>
 <button (click)="addMovie()" [disabled]="!ctrl.valid">Add movie</button>

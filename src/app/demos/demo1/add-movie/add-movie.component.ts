@@ -16,5 +16,6 @@ export class AddMovieComponent implements OnInit {
 
   addMovie() {
     this.movieAdded.emit(this.movieToAdd);
+    this.movieToAdd = '';
   }
 }
