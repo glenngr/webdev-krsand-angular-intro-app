@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from '../../core/rxjs';
 
 import { Movie } from './movie.model';
+import { MovieService } from './movie.service';
 
 @Component({
   selector: 'app-demo1',
@@ -8,18 +10,16 @@ import { Movie } from './movie.model';
   styleUrls: ['./demo1.component.css']
 })
 export class Demo1Component implements OnInit {
-  movieWatchlist: Movie[] = [
-    new Movie('Terminator 2', true),
-    new Movie('District 9', true),
-    new Movie('Get out', false),
-  ];
+  movieWatchlist$: Observable<Movie[]>;
 
-  constructor() { }
+  constructor(private movieService: MovieService) {
+    this.movieWatchlist$ = this.movieService.movieWatchlist$;
+  }
 
   ngOnInit() {
   }
 
   addMovie(movieName) {
-    this.movieWatchlist.push(new Movie(movieName, false));
+    this.movieService.addMovie(movieName);
   }
 }
