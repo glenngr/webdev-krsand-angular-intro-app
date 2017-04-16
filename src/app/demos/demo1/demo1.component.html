@@ -1,8 +1,8 @@
 <div class="demo1-content">
-  <ng-container *ngIf="movieWatchlist$ | async">
+  <ng-container *ngIf="movieWatchlist$ | async as movies">
     <h4>Movies to watch</h4>
     <ul>
-      <li *ngFor="let movie of movieWatchlist$ | async"><input type="checkbox" [checked]="movie.seen">{{movie.title}}</li>
+      <li *ngFor="let movie of movies"><input type="checkbox" [checked]="movie.seen">{{movie.title}}</li>
     </ul>
   </ng-container>
   <app-add-movie (movieAdded)="addMovie($event)"></app-add-movie>
