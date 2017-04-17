@@ -1,16 +1,16 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { Observable } from '../../core/rxjs';
+import { Observable } from '../core/rxjs';
 
 import { Movie } from './movie.model';
 import { MovieService } from './movie-service/movie.service';
 
 @Component({
-  selector: 'app-demo1',
-  templateUrl: './demo1.component.html',
-  styleUrls: ['./demo1.component.css'],
+  selector: 'app-movie-watchlist',
+  templateUrl: './movie-watchlist.component.html',
+  styleUrls: ['./movie-watchlist.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class Demo1Component implements OnInit {
+export class MovieWatchlistComponent implements OnInit {
   movieWatchlist$: Observable<Movie[]>;
 
   constructor(private movieService: MovieService) {

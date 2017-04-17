@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
-import { Movie } from '../demos/demo1/movie.model';
+import { Movie } from '../movie-watchlist/movie.model';
 
 @Injectable()
 export class InMemoryMovieService implements InMemoryDbService {

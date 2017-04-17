@@ -10,7 +10,7 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryMovieService } from './core';
 
 import { AppComponent } from './app.component';
-import { DemoModule } from './demos/';
+import { MovieWatchlistModule } from './movie-watchlist/';
 import { AppToolbarModule } from './app-toolbar/app-toolbar.module';
 
 @NgModule({
@@ -24,7 +24,7 @@ import { AppToolbarModule } from './app-toolbar/app-toolbar.module';
     InMemoryWebApiModule.forRoot(InMemoryMovieService),
     MaterialModule,
     BrowserAnimationsModule,
-    DemoModule,
+    MovieWatchlistModule,
     AppToolbarModule
   ],
   providers: [],

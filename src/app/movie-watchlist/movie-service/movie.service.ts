@@ -1,5 +1,5 @@
 import { Injectable, OnInit } from '@angular/core';
-import { BehaviorSubject, Observable } from '../../../core/rxjs';
+import { BehaviorSubject, Observable } from '../../core/rxjs';
 import { Movie } from '../movie.model';
 import { MovieHttpService } from './movie-http.service';
 
