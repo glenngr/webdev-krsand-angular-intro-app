@@ -12,4 +12,8 @@ export class AppComponent {
   onButtonClick() {
     alert('You clicked me');
   }
+
+  // onButtonClick() {
+  //   this.title = this.title + '!';
+  // }
 }
