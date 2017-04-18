@@ -1,14 +1,14 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { UnitTestModule } from './core';
-import { DemoModule } from './demos';
+import { MovieWatchlistModule } from './movie-watchlist';
 import { AppComponent } from './app.component';
 import { AppToolbarModule } from './app-toolbar/app-toolbar.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [UnitTestModule, DemoModule, AppToolbarModule],
+      imports: [UnitTestModule, MovieWatchlistModule, AppToolbarModule],
       declarations: [
         AppComponent
       ],
