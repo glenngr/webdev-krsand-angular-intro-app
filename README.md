@@ -1,6 +1,9 @@
 # WebdevkrsandAngularIntro
 Example app used in WebDev Krsand meetup about Angular April 19 2017
 
+Download the repo or clone it and run `npm install`
+
+
 ## Branch information
 This repo contains 3 branches.
 
@@ -9,6 +12,7 @@ Angular-CLI generated project with:
 * Hot Module Replacement
 * Material Design
 * npm start script runs tests and web development server in parallel
+
 
 ### with-node-sass
 Same as in master branch plus:
@@ -19,6 +23,7 @@ Same as in master branch plus:
 **You must have Python 2.7 installed for this branch to work**
 Download Python from www.python.org
 
+
 ### with-self-hosted-material-design-icons
 Same as in *with-node-sass* branch, plus:
 * The Material Design Icons NPM package has been installed and angular-cli.json is set up to copy font files to the assets folder on build
@@ -26,6 +31,7 @@ Same as in *with-node-sass* branch, plus:
 In this branch, the Material Icons are not downloaded from the internet when app is started.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+
 
 # How to use this project
 ## npm serve
