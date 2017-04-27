@@ -3,6 +3,7 @@ Example app used in WebDev Krsand meetup about Angular April 19 2017
 
 Download the repo or clone it and run `npm install`
 
+If you want to start a new Angular project and want the features available in this example project, [check out this repo](https://github.com/glenngr/angular-cli-based-starter)
 
 ## Branch information
 This repo contains 3 branches.
