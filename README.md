@@ -1,6 +1,10 @@
 # WebdevkrsandAngularIntro
 Example app used in WebDev Krsand meetup about Angular April 19 2017
 
+Download the repo or clone it and run `npm install`.
+
+If you want to start a new Angular project and want the features available in this example project, [check out this repo](https://github.com/glenngr/angular-cli-based-starter)
+
 ## Branch information
 This repo contains 3 branches.
 
@@ -12,8 +16,7 @@ Angular-CLI generated project with:
 
 ### with-node-sass
 Same as in master branch plus:
-* node-sass package installed along with scripts for converting scss files to css
-* npm start script also runs sass:watch
+* angular-cli is configured to use scss styles
 * styles.scss used for global styles
 
 **You must have Python 2.7 installed for this branch to work**
