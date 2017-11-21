@@ -4,7 +4,7 @@
 // Importing in regular .css files will generate a HTTP request on app load to fetch the imported css file.
 // Conclusion: importing in scss files is more efficient, since we avoid many HTTP requests.
 
-@import '@angular/material/theming';
+@import '~@angular/material/theming';
 
 @include mat-core();
 
@@ -19,4 +19,4 @@ $warn: $def-warn;
 
 @include angular-material-theme($def-theme);
 
-@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
